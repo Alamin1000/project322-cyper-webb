@@ -2,6 +2,9 @@
 .underline {
     text-decoration: underline !important;
 }
+.hover-underline:hover {
+    text-decoration: underline !important;
+}
 .h-initial {
     height: initial !important;
 }

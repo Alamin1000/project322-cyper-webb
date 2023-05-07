@@ -526,6 +526,8 @@ p:last-child{
 }
 .footer-l-src {
   margin-left: 99px;
+  text-align: center;
+  display: inline-block;
 }
 .footer-l-src img {
 
