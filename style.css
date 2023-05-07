@@ -283,6 +283,19 @@ p:last-child{
   background: var(--theme__color2);
   color: var(--theme__color3);
 }
+.offer-card .of-card-tpb {
+  min-width: 182px;
+  padding: 3px 10px;
+  margin: 0 0 32px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  background: #8B908B;
+  line-height: 1.1;
+  border-radius: 40px;
+  font-family: var(--cairo);
+  transition: 0.3s;
+}
 .offer-card h3 {
   font-size: 32px;
   margin: 0 0 20px;
@@ -298,6 +311,12 @@ p:last-child{
   margin-right: 8px;
   font-size: 18px;
 }
+.offer-card p .sm {
+  font-size: 18px;
+}
+.offer-card p .xs {
+  font-size: 15px;
+}
 .offer-card .l {
   margin: 30px 0 26px;
 }
@@ -312,6 +331,10 @@ p:last-child{
   border-radius: 40px;
   font-family: var(--yrsa);
   transition: 0.3s;
+}
+.offer-card .of-in-btn-sm {
+  font-size: 15px;
+  line-height: 1;
 }
 .offer-card .of-in-btn:hover {
   background: var(--theme__color3);

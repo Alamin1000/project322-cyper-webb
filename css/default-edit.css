@@ -5,6 +5,9 @@
 .hover-underline:hover {
     text-decoration: underline !important;
 }
+.radius-0 {
+    border-radius: 0 !important;
+}
 .h-initial {
     height: initial !important;
 }
