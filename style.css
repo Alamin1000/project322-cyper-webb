@@ -557,9 +557,11 @@ p:last-child{
   line-height: 1.8;
 }
 .contact-content p .contact-phone {
-  position: absolute;
-  top: 0;
-  left: calc(100% + 3px);
+	position: absolute;
+	top: 4px;
+	left: calc(100% + 3px);
+	font-size: 89px;
+	color: #000;
 }
 /* ---contact-section---end */
 
