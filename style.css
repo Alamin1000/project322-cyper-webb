@@ -1,7 +1,7 @@
 /*-----------------------------------=========Main-Style-Sheet=========----------------------------------------*/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Mukta+Vaani:wght@300;400;500;600;700;800&family=Play:wght@400;700&family=Yrsa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Martel:wght@300;400;600;700;800;900&family=Mukta+Vaani:wght@300;400;500;600;700;800&family=Play:wght@400;700&family=Yrsa:wght@300;400;500;600;700&display=swap');
 :root {
   --theme__color1: #2D5F3A;
   --theme__color2: #A8D09C;
@@ -11,6 +11,7 @@
   --cairo: 'Cairo', sans-serif;
   --play: 'Play', sans-serif;
   --yrsa: 'Yrsa', serif;
+  --martel: 'Martel', serif;
 }
 *,::before,::after {
   box-sizing: border-box;
@@ -138,6 +139,44 @@ p:last-child{
   transition: 0.3s;
 }
 .main-menu > ul > li > a:hover {
+  color: var(--theme__color2);
+}
+
+.off-dropdown {
+
+}
+.off-dropdown > a {
+
+}
+.off-dropdown > a > img {
+
+}
+.off-dropdown .dropdown-menu {
+  min-width: 65px;
+  background: var(--theme__color3);
+  color: #fff;
+  border: none;
+  font-family: var(--martel);
+  border-radius: 0;
+  padding: 0;
+  inset: -40px auto auto 0px !important;
+}
+.off-dropdown .dropdown-menu ul {
+
+}
+.off-dropdown .dropdown-menu ul li {
+
+}
+.off-dropdown .dropdown-menu ul li a {
+  font-size: 12px;
+  padding: 14px 5px;
+  color: #BCC4BC;
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid #BCC4BC;
+}
+.off-dropdown .dropdown-menu ul li a:hover {
+  background: var(--theme__color1);
   color: var(--theme__color2);
 }
 /* header-end */
