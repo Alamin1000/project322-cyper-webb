@@ -1,0 +1,259 @@
+/*-----------------------------------=========Main-Style-Sheet=========----------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Mukta+Vaani:wght@300;400;500;600;700;800&family=Play:wght@400;700&family=Yrsa:wght@300;400;500;600;700&display=swap');
+:root {
+  --theme__color1: #2D5F3A;
+  --theme__color2: #A8D09C;
+  --theme__color3: #292828;
+
+  --mukta-vaani: 'Mukta Vaani', sans-serif;
+  --cairo: 'Cairo', sans-serif;
+  --play: 'Play', sans-serif;
+  --yrsa: 'Yrsa', serif;
+}
+*,::before,::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #292828;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+  font-weight: 400;
+  font-family: var(--mukta-vaani);
+  -webkit-font-smoothing: antialiased;
+}
+a, a:active, a:focus, a:active, a:hover {
+  text-decoration:none !important;
+  color: inherit;
+}
+input{
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+  outline: none;
+}
+::placeholder {
+  opacity: 1;
+}
+:focus::placeholder {
+  opacity: 0;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+iframe {
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 700;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+  margin-bottom: 15px;
+}
+p:last-child{
+  margin: 0;
+}
+.main-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1195px;
+  }
+}
+
+
+
+/* header */
+.header-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: var(--theme__color3);
+  color: #fff;
+}
+.header-in {
+  padding: 27px 0 22px;
+}
+.header-section__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header__logo {
+  width: 415px;
+  margin-bottom: -21px;
+  display: block;
+}
+.header__logo img {
+
+}
+.main-menu {
+
+}
+.main-menu > ul {
+  display: flex;
+  gap: 40px;
+}
+.main-menu > ul > li {
+
+}
+.main-menu > ul > li > a {
+  font-size: 24px;
+  font-family: var(--play);
+  transition: 0.3s;
+}
+.main-menu > ul > li > a:hover {
+  color: var(--theme__color2);
+}
+/* header-end */
+
+
+
+/* --preloader-- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid var(--theme__color1);
+  border-top-color: #e2eefd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+/* --preloader-end-- */
+
+
+/* ---common--- */
+.h3 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: var(--play);
+}
+/* ---common---end */
+
+
+/* ---offer-section--- */
+.offer-section {
+  padding: 70px 0 45px;
+  background: #BCC4BC;
+}
+.offer-section__inner {
+
+}
+.offer-section__title {
+  padding: 0 0 47px 75px;
+}
+
+.offers-container {
+  gap: 97px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.offer-card {
+  max-width: 380px;
+  width: 100%;
+  background: var(--theme__color1);
+  color: #fff;
+  text-align: center;
+}
+.offer-card--light {
+  background: var(--theme__color2);
+  color: var(--theme__color3);
+}
+.offer-card h3 {
+  font-size: 32px;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-family: var(--cairo);
+}
+.offer-card p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.offer-card p .marker {
+
+}
+.offer-card .l {
+
+}
+.offer-card .of-in-btn {
+  min-width: 182px;
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  background: #8B908B;
+  line-height: 1.1;
+  border-radius: 40px;
+}
+
+.offer-section .l-h5 {
+
+}
+/* ---offer-section---end */
