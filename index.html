@@ -39,10 +39,10 @@
 
               <div class="main-menu">
                 <ul>
-                  <li><a href="#">početna strana</a></li>
-                  <li><a href="#">ponuda</a></li>
-                  <li><a href="#">blog</a></li>
-                  <li><a href="#">kontakt</a></li>
+                  <li><a href="index.html">početna strana</a></li>
+                  <li><a href="#offer-section">ponuda</a></li>
+                  <li><a href="#blog-section">blog</a></li>
+                  <li><a href="#contact-section">kontakt</a></li>
                 </ul>
               </div>
             </div>
@@ -54,7 +54,7 @@
       <!-- main -->
       <main>
         <!-- offer-section -->
-        <section class="offer-section">
+        <section class="offer-section" id="offer-section">
           <div class="container">
             <div class="offer-section__inner">
               <div class="offer-section__title">
@@ -64,6 +64,7 @@
               <div class="offers-container">
                 <!-- offer-card-start -->
                 <div class="offer-card">
+                  <a href="#" class="of-in-tp-btn">popularno</a>
                   <h3>Web hosting</h3>
                   <p><span class="marker">&bull;</span> 4GB prostora</p>
                   <p><span class="marker">&bull;</span> 1 CPU core</p>
@@ -204,17 +205,19 @@
         <!-- move-section-end -->
 
         <!-- com-section -->
-        <section class="com-section">
+        <section class="com-section" id="blog-section">
           <div class="container">
             <div class="com-section__inner">
-              <div class="com-row row">
+              <div class="com-row row g-0">
                 <div class="col-6">
                   <div class="com-content">
                     <h3>12+ godina sa Vama</h3>
                     <p>
                       Od svog osnivanja CyberWebb ima misiju da nudi usluge
-                      hosting koji olakšavaju rad programerima i njihovim
+                      hosting koji <br />
+                      olakšavaju rad programerima i njihovim <br />
                       klijentima. Ispunjavamo svoje obećanje stalnim ažuriranjem
+                      <br />
                       serverske tehnologije i podržavanje korisničke podrške.
                     </p>
                   </div>
@@ -223,9 +226,10 @@
                   <div class="com-content">
                     <h3>Najkvalitetniji hosting u Srbiji</h3>
                     <p>
-                      Mi smo CyperWebb hosting provajder iz Srbije koji Vam nudi
-                      usluge po svetskim standardima na domaćem tržištu.Naše
-                      usluge prilagođene su kako fizičkim tako i pravnim licima.
+                      Mi smo CyperWebb hosting provajder iz Srbije koji <br />
+                      Vam nudi usluge po svetskim standardima na <br />
+                      domaćem tržištu.Naše usluge prilagođene su kako <br />
+                      fizičkim tako i pravnim licima.
                     </p>
                   </div>
                 </div>
@@ -240,30 +244,34 @@
           <div class="container">
             <div class="info-section__inner">
               <div class="info__content">
-                <h3 class="h3">Informacije</h3>
-                <p>
-                  <span class="marker">&bull;</span> Cene naših usluga
-                  prilagodili smo uslovima tržišta i slobodno tvrdimo da nudimo
-                  najbolja hosting rešenja po najpovoljnijim uslovima na
-                  teritoriji Srbije.
-                </p>
-                <p>
-                  <span class="marker">&bull;</span> Registracije domena su,
-                  pored povoljnih usluga hosting ponude usklađene sa nabavnim
-                  cenama, tako da su troškovi Vašeg nastupa na internetu svedeni
-                  na minimum.
-                </p>
-                <p>
-                  <span class="marker">&bull;</span> Stabilno i sigurno hosting
-                  rešenje predstavlja potporu u osvajanju internet tržišta. Uz
-                  našu podršku na tom putu Vama preostaje da se fokusirate na
-                  ciljeve Vašeg biznisa.
-                </p>
-                <p>
-                  <span class="marker">&bull;</span> Naš cilj su zadovoljni
-                  korisnici hostinga u Srbiji. S tim u vezi, radujemo se
-                  uspešnoj i kvalitetnoj saradnji.
-                </p>
+                <div class="row">
+                  <div class="col-md-9">
+                    <h3 class="h3">Informacije</h3>
+                    <p>
+                      <span class="marker">&bull;</span> Cene naših usluga
+                      prilagodili smo uslovima tržišta i slobodno tvrdimo da
+                      nudimo najbolja hosting rešenja po najpovoljnijim uslovima
+                      na teritoriji Srbije.
+                    </p>
+                    <p>
+                      <span class="marker">&bull;</span> Registracije domena su,
+                      pored povoljnih usluga hosting ponude usklađene sa
+                      nabavnim cenama, tako da su troškovi Vašeg nastupa na
+                      internetu svedeni na minimum.
+                    </p>
+                    <p>
+                      <span class="marker">&bull;</span> Stabilno i sigurno
+                      hosting rešenje predstavlja potporu u osvajanju internet
+                      tržišta. Uz našu podršku na tom putu Vama preostaje da se
+                      fokusirate na ciljeve Vašeg biznisa.
+                    </p>
+                    <p>
+                      <span class="marker">&bull;</span> Naš cilj su zadovoljni
+                      korisnici hostinga u Srbiji. S tim u vezi, radujemo se
+                      uspešnoj i kvalitetnoj saradnji.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -271,17 +279,17 @@
         <!-- info-section-end -->
 
         <!-- contact-section -->
-        <section class="contact-section">
+        <section class="contact-section" id="contact-section">
           <div class="container">
             <div class="contact-section__inner">
               <div class="cont-blk cont-blk--center contact-content">
-                <img
-                  src="images/contact-phone.png"
-                  alt=""
-                  class="contact-phone"
-                />
                 <h3 class="h3">IMATE DILEMU ILI PITANJE PRE KUPOVINE?</h3>
                 <p>
+                  <img
+                    src="images/contact-phone.png"
+                    alt=""
+                    class="contact-phone"
+                  />
                   Pozovite nas <br />
                   Ponedeljak - petak 09-17h <br />
                   <a href="TEL:+381601234567">+381601234567</a>
@@ -304,7 +312,7 @@
                   <a href="index.html" class="footer-logo">
                     <img src="images/footer-logo.png" alt="" />
                   </a>
-                  <p>
+                  <p class="mb-1">
                     Jedino mesto na internetu <br />
                     gde ćete biti potpuno bezbedni i uvek imati prijatelja za
                     pomoć.
@@ -320,42 +328,42 @@
                     <div class="footer-menu">
                       <h4>Usluge</h4>
                       <ul>
-                        <li>Business hosting</li>
-                        <li>VPS server</li>
-                        <li>Dedicated server</li>
-                        <li>Web hosting</li>
+                        <li><a href="#">Business hosting</a></li>
+                        <li><a href="#">VPS server</a></li>
+                        <li><a href="#">Dedicated server</a></li>
+                        <li><a href="#">Web hosting</a></li>
                       </ul>
                     </div>
                     <div class="footer-menu">
                       <h4>Info</h4>
                       <ul>
-                        <li>PIB : 01234567</li>
-                        <li>M.B. : 00123435</li>
+                        <li><a href="#">PIB : 01234567</a></li>
+                        <li><a href="#">M.B. : 00123435</a></li>
                       </ul>
                     </div>
                     <div class="footer-menu">
                       <h4>Mailing lista</h4>
                       <input
                         type="text"
-                        class="inpuit"
+                        class="input"
                         placeholder="e-mail adresa"
                       />
                       <button class="submit-btn">prijava</button>
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="footer-menu">
+                    <div class="footer-menu pb-2">
                       <h4>Pozovite nas</h4>
                       <ul>
-                        <li>+381601234567</li>
+                        <li><a href="#">+381601234567</a></li>
                       </ul>
                     </div>
                     <div class="footer-menu">
                       <h4>CyberWebb</h4>
                       <ul>
-                        <li>O nama</li>
-                        <li>Kontakt</li>
-                        <li>Blog</li>
+                        <li><a href="#">O nama</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Blog</a></li>
                       </ul>
                     </div>
                     <div class="footer-menu">
