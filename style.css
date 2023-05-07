@@ -528,6 +528,8 @@ p:last-child{
 .info__content p {
   margin-bottom: 33px;
   line-height: 1.8;
+  display: flex;
+  gap: 5px;
 }
 .info__content p:last-child {
   margin-bottom: 0;
