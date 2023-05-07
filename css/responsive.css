@@ -148,7 +148,9 @@
 
 
 @media (max-width: 991px) {
- 
+    .offer-section__inner {
+        padding: 0;
+    }
 }
 
 
